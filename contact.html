@@ -6,59 +6,68 @@
         <link href="assets/css/reset.css" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <link href="assets/css/style.css" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       <title>Bootstrap Portfolio</title>  
     </head>
 
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="#______________(link to landing page)">J . I . N</a>
-          </div>
-          <ul class="nav navbar-nav">
-            <li ><a href="index.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li class="active"><a href="contact.html">Contact</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="https://www.linkedin.com/in/johnnyneagoe/" target="_blank"><span class="fab fa-linkedin fa-lg"></span></a></li>
-            <li><a href="https://github.com/JohnnyNeagoe" target="_blank"><span class="fab fa-github fa-lg"></span></a></li>
-          </ul>
-        <div>
-    </nav>
-  <div class="container-fluid">
-  <section class="container2">
-      <div>  
-          <h2>Contact</h2>
-          <hr>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header hidden-xs">
+        <a class="navbar-brand" href="#______________(link to landing page, for future use)">J . I . N</a>
       </div>
-      <form>
-        <div class="subcat">
-          <h4>Name</h4>
-          <input type="text" name="name">
+      <ul class="nav navbar-nav navbar-left left pull-left flex-row">
+        <li class="nav-item pull-left"><a href="index.html">About</a></li>
+        <li class="nav-item pull-left"><a  href="portfolio.html">Portfolio</a></li>
+        <li class="active nav-item pull-left"><a href="contact.html">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right pull-right flex-row">
+        <li class="nav-item pull-right"><a href="https://www.linkedin.com/in/johnnyneagoe/" target="_blank"><span class="fab fa-linkedin fa-lg"></span></a></li>
+        <li class="nav-item pull-right"><a href="https://github.com/JohnnyNeagoe" target="_blank"><span class="fab fa-github fa-lg"></span></a></li>
+      </ul>
+    <div>
+  </nav>
+  <div id="page">
+    <div class="container jumbotron">
+      <div class="row"> 
+        <div class="col-md-2"></div>
+        <h2 class="col-md-2">Contact</h2>
+      </div> 
+      <div class="row"> 
+      <div class="col-md-2"></div>
+        <hr class="col-sml-8">
+      </div> 
+      <div class="container ppp">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <div class="form-area">  
+            <form role="form"></form>
+            <br style="clear:both">
+          <div class="form-group">
+            <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="email" name="email" placeholder="Email" required>
+          </div>
+            <div class="form-group">
+          <input type="text" class="form-control" id="mobile" name="mobile" placeholder="Mobile Number" required>
+            </div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" type="textarea" id="message" placeholder="Message" maxlength="140" rows="7"></textarea>
+          </div>    
+          <button type="button" id="submit" name="submit" class="btn btn-primary pull-left">Submit</button>
         </div>
-          <br>
-          <div class="subcat">
-            <h4>Email</h4>
-            <input type="text" name="email">
-          </div>
-          <br>
-          <div class="subcat">
-            <h4>Message</h4>
-            <textarea name="message" rows="1" cols="40">
-            </textarea>
-          </div>
-          <div class="subcat">
-            <input id="button" type="button" value="Submit">
-          </div>
-      </form>    
-  </section>
-</div>
-<footer class="footer navbar-inverse navbar-fixed-bottom">
+      </div>
+    </div>
+  </div>
+  <footer class="footer navbar-inverse navbar-bottom">
     <div class="container-fluid">
-      <span class="text-muted text-center">copyright ©</span>
+      <p class="text-muted text-center">copyright ©</p>
     </div>
   </footer>
 </body>
